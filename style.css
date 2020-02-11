@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 @font-face {
@@ -10,79 +10,130 @@
     src: url('fonts/Junicode-RegularCondensed.ttf')
 }
 
+@font-face {
+    font-family: 'Junicode';
+    src: url('../fonts/Junicode-RegularCondensed.ttf')
+}
+
+
+
 body {
     min-height: 100vh;
-    color: #a4a2a2
+    color: #a4a2a2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 main {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .container {
-    padding: 50px;
-    width: 80vw;
+    padding: 1%;
+    width: 100%;
     margin: 0;
-    min-height: 90vh;
+    font-family: 'Junicode';
+    font-size: 50px;
+    line-height: 48px;
+    letter-spacing: -1.04px;
     position: relative;
 }
 
-p {
-    font-family: 'Junicode';
-    font-size: 50px;
-    line-height: 52px;
-    letter-spacing: -1.04px;
-    width: 100%;
-
-}
-
 footer {
-    padding-left: 40px;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    width: 100%;
 }
 
-.button {
-    border: 1px solid #a4a2a2;
+/* style buttonów */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    border: solid 1px #a4a2a2;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    line-height: 32px;
     border-radius: 20px;
+    border: solid 1px #a4a2a2;
+    height: 32px;
+}
+
+a {
     text-decoration: none;
     color: #a4a2a2;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    padding: 10px 30px;
-    display: inline-block;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-
+    font-size: 18px;
+    height: 22px;
 }
 
-.button:first-child {
-    width: 100px;
-
+#pl {
+    width: 66px;
 }
 
-.button a {
-    text-align: center;
+#en {
+    width: 61px;
 }
 
-.button:hover {
-    background-color: #a4a2a2;
-    color: white;
-    text-decoration: none;
+#lang a {
+    width: 49px;
+}
+
+#fb {
+    width: 92px;
+}
+
+#fb a {
+    width: 80px;
+}
+
+#ig {
+    width: 93px
+}
+
+#ig a {
+    width: 81px;
+}
+
+
+#soundcloud {
+    width: 112px;
 }
 
 img {
     position: absolute;
     bottom: 16px;
     right: 16px;
+    width: 120px;
+    height: 120px;
+    opacity: 0.9;
+}
+
+#main-img {
+    display: inline-block;
+    position: absolute;
+    object-fit: contain;
+
+    width: 95%;
+    height: 95%;
+    opacity: 0.9;
+    filter: drop-shadow() 0 20px 4px 0 rgba(0, 0, 0, 0.1));
 }
 
 @media screen and (max-width: 1020px) {
-    p {
+    .container {
         font-size: 2.5em;
     }
 }
 
 
 @media screen and (max-width: 640px) {
-    p {
+    .container {
         font-size: 2em;
     }
 }
