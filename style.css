@@ -186,7 +186,6 @@ a:hover {
 @media screen and (max-width: 640px) {
   .container {
     font-size: 60%;
-    line-height: 120%;
   }
 
   #main-img {
