@@ -1,137 +1,196 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
-    font-family: 'Junicode';
-    src: url('fonts/Junicode-RegularCondensed.ttf')
+  font-family: "Junicode";
+  src: url("fonts/Junicode-RegularCondensed.ttf");
 }
 
 @font-face {
-    font-family: 'Junicode';
-    src: url('../fonts/Junicode-RegularCondensed.ttf')
+  font-family: "Junicode";
+  src: url("../fonts/Junicode-RegularCondensed.ttf");
 }
-
-
 
 body {
-    min-height: 100vh;
-    color: #a4a2a2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
+  min-height: 100vh;
+  color: #a4a2a2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  font-size: 50px;
 }
 
 main {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .container {
-    padding: 1%;
-    width: 100%;
-    margin: 0;
-    font-family: 'Junicode';
-    font-size: 50px;
-    line-height: 48px;
-    letter-spacing: -1.04px;
-    position: relative;
+  padding: 1%;
+  width: 100%;
+  margin: 0;
+  font-family: "Junicode";
+  line-height: 48px;
+  letter-spacing: -1.04px;
+  position: relative;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 footer {
-    padding-left: 1%;
-    padding-bottom: 1%;
-    width: 100%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+  z-index: 100
 }
 
 /* style buttonów */
 ul {
-    list-style-type: none;
+  list-style-type: none;
+
 }
 
 ul li {
-    border: solid 1px #a4a2a2;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    line-height: 32px;
-    border-radius: 20px;
-    border: solid 1px #a4a2a2;
-    height: 32px;
+  border: solid 1px #a4a2a2;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  line-height: 50%;
+  border-radius: 20px;
+  height: 32px;
 }
 
 a {
-    text-decoration: none;
-    color: #a4a2a2;
-    font-size: 18px;
-    height: 22px;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #a4a2a2;
+  font-size: 18px;
+  height: 22px;
 }
 
-#pl {
-    width: 66px;
+li:hover {
+  background-color: #a4a2a2;
+  /* color: white; */
+}
+
+a:hover {
+  color: white;
+}
+
+/* #pl {
+  width: 65px;
 }
 
 #en {
-    width: 61px;
-}
-
-#lang a {
-    width: 49px;
+  width: 70px;
 }
 
 #fb {
-    width: 92px;
+  width: 92px;
 }
 
 #fb a {
-    width: 80px;
+  width: 80px;
 }
 
 #ig {
-    width: 93px
+  width: 93px;
 }
 
 #ig a {
-    width: 81px;
+  width: 81px;
 }
-
 
 #soundcloud {
-    width: 112px;
-}
+  width: 112px;
+} */
 
-img {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    width: 120px;
-    height: 120px;
-    opacity: 0.9;
+#logo {
+  position: absolute;
+  bottom: 0.5%;
+  right: 0.5%;
+  width: 15%;
+  opacity: 0.9;
+  max-width: calc(532px/2);
 }
 
 #main-img {
-    display: inline-block;
-    position: absolute;
-    object-fit: contain;
-    width: 95%;
-    height: 95%;
-    opacity: 0.9;
-    filter: drop-shadow() 0 20px 4px 0 rgba(0, 0, 0, 0.1));
+  display: inline-block;
+  position: absolute;
+  object-fit: contain;
+  width: 95%;
+  height: 95%;
+  top: 0;
+  /* left: 50px; */
+  opacity: 0.9;
+  filter: drop-shadow() 0 20px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 1020px) {
-    .container {
-        font-size: 2.5em;
-    }
+
+
+/* @media screen and (max-width: 1020px) {} */
+@media screen and (max-width: 1600px) {
+
+  .container {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+
+  .container {
+    font-size: 100%;
+
+  }
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    display: block;
+    float: left;
+  }
+
+  #logo {
+    display: block;
+    width: 30%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+
+  .container {
+    font-size: 80%;
+  }
 }
 
 @media screen and (max-width: 640px) {
-    .container {
-        font-size: 2em;
-    }
+  .container {
+    font-size: 60%;
+    line-height: 120%;
+  }
+
+  #main-img {
+    overflow: hidden;
+    position: fixed;
+  }
 }
