@@ -83,6 +83,7 @@ a {
   text-decoration: none;
   color: #a4a2a2;
   font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 a {
   transition: color 0.5s ease-in 0s;
