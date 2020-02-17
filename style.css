@@ -32,7 +32,6 @@ main {
   padding: 0;
   width: 100%;
 }
-
 .container p {
   padding: 1%;
   width: 100%;
@@ -51,11 +50,9 @@ main {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
-  /* padding-left: 1%;
-  padding-bottom: 1%; */
   width: 100%;
   z-index: 100;
 }
@@ -119,6 +116,9 @@ a:hover {
 
 /* @media screen  */
 @media screen and (max-width: 1920px) {
+  body {
+    height: auto;
+  }
   .container p {
     font-size: 80px;
     letter-spacing: -1.67px;
